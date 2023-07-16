@@ -1,0 +1,134 @@
+<!DOCTYPE html>   <!--使用html5标准写的这个网页-->
+<html lang="en">  <!--整个网页内容都需要包裹在html中-->
+<head>            <!--head头部不会展现在网页中，只是对网页做一个解释或进行一些操作，常见头部说明如下-->
+    <meta charset="UTF-8">                          <!--设置网页编码-->
+    <mate name="keywords"content="关键字"/>          <!--关键字-->
+    <mate name="description"content="简介/描述"/>     <!--描述-->
+    <title>Title</title>                            <!--本网页标题-->
+    <link type="text/css"rel="stylesheet"href="**.css">   <!--导入css文件-->
+    <style type="text/css">嵌入css样式代码</style>          <!--css代码-->
+    <script></script>                           <!--js文件或代码-->
+    <!--css:
+   层叠样式表：可用于美化html文件呈现的内容
+   格式：
+   某个需要被美化的对象 {属性1：值1；属性2，值2...}
+   -->
+    <style>  /*可以在头部嵌入css样式，可以在某个对象的参数里设置，可以在外部建立一个css文件进行引用*/
+      h1{color: #00BCD4}  /*这个是注释符号*/
+      h2{color: #6A1B9A}
+      h3{color: #00B0FF}
+      h1{color: #76FF03}
+    </style>
+</head>
+
+<body>            <!--网页里要展示的内容全都要在body里写-->
+   <h1>亲爱的宝宝</h1>
+   <h2>你是我的唯一</h2>
+   <h3>爱你爱你</h3>
+   <h4 style="color: #7B1FA2;font-size: x-large">永远爱你哟~~~~</h4>
+   <u>u是下划线标签</u><br/>  <!--<br/>放在末尾表示换行-->
+   <del>del是删除线</del><br/>
+   <b>b是加粗标签</b><br/>
+   <strong>strong会把被选中的内容进行加粗</strong><br/>
+   <i>i是斜体</i><br/>
+   <em>em是强调斜体</em><br/>
+   <cite>清明上河图</cite> 是我国十大传世名画之一<br/>  <!--cite是作品的标题（引用）-->
+   水分子：H<sub>2</sub>O <br/>  <!--2变成H的下标-->
+   2<sup>4</sup>=16<br/>
+
+<p>  <!--换段落-->
+    我是一个<br/>
+    小小的石头<br/>
+    深深滴埋在泥土之中
+</p>
+<p>
+    千年以后<br/>
+    繁华落幕<br/>
+    我还在风雨之中静静等候
+</p>
+
+<u1 type="circle">  <!--无序列表-->
+    <li>看书</li>
+    <li>爬山</li>
+    <li>看电影</li>
+</u1>
+<o1 type="a">  <!--有序列表-->
+    <li>看书</li>
+    <li>爬山</li>
+    <li>看电影</li>
+</o1><br/>
+<d1>   <!--自定义列表-->
+    <dt>你是谁</dt>
+    <dd>曹操</dd>
+</d1><br/>
+<div>好家伙</div><div>你真行</div><div>做出这种事</div>  <!--div不允许别的内容与他同行，常用于组合块状元素-->
+<span>cccccchhh</span><span>ddddddhhh</span> <!--该标签没有任何作用-->
+<br/>
+
+
+<h1>图片img标签</h1>
+<a href="#mv1">截图1</a><br/> <!--锚点链接：点击后跳转到同一页某个地方-->
+<a href="#mv2">截图2</a><br/>
+<a id="mv1"</a>
+<h4>截图1</h4>
+<img src="../studyproject/picture/img.png" alt="截图1"  title="截图" border="1" width="500" height="" /><br/>
+<a id="mv2"</a>
+<h4>截图2</h4>
+<img src="../studyproject/picture/img_1.png" alt="截图2" width="500" height="" /><br/>
+<img src="https://ts1.cn.mm.bing.net/th/id/R-C.31df3a5a2d8462228734f95d459883e2?rik=7EE6TeWDk%2f%2bctQ&riu=http%3a%2f%2fwww.quazero.com%2fuploads%2fallimg%2f140303%2f1-140303214331.jpg&ehk=SpI7mz%2byLqOkT8BL79jcd3iCtQYNFlBHQzbtF1p0vuQ%3d&risl=&pid=ImgRaw&r=0" alt="截图3" width="500" height="" />
+<br/><br/>
+
+<!--超链接标签，target表示打开方式，是在原网页还是新建-->
+<a herf="https://mail.qq.com/" target="_blank" >邮箱</a>
+<br/><br/>
+
+<!--建立表格-->
+<table border="1" width="100" cellspacing="0" cellpadding="50"> <!--建立表格-->
+    <caption><h2>信息表</h2></caption> <!--标题-->
+    <thead>  <!--表头-->
+        <tr>
+            <th width="80">学号</th>    <!--th加粗显示内容-->
+            <th>姓名</th>
+            <th>班级</th>
+        </tr>
+    </thead>
+    <tbody>  <!--每行内容-->
+        <tr>
+            <td>123456</td>   <!--td正常显示内容-->
+            <td>张飒</td>
+            <td rowspan="2" align="center" valign="top">2019班</td>
+        </tr>
+        <tr>
+            <td>127756</td>   <!--td正常显示内容-->
+            <td>王飒</td>
+            <!--<td>2019班</td>-->
+        </tr>
+        <tr>
+            <td>23456</td>   <!--td正常显示内容-->
+            <td>王莽</td>
+            <td>2017班</td>
+        </tr>
+    </tbody>
+</table>
+<br/><br/><br/>
+
+<!--#####建立表单：即用于收集客户输入信息的东西-->
+<h2>表单实例</h2>
+<form action="https://mail.qq.com" method="get">
+    <!--action为提交后的跳转目标地址;method表示将表单信息提交给目标地址的方式，=post时，跳转后密码不可见-->
+    账号：<input type="text" name="umane"><br/>  <!--由type决定这个字段的输入方式和类型，比如单选多选-->
+    密码：<input type="password" name="upass"><br/>
+    <input type="submit" value="登录"> <!--submit表示提交-->
+</form><br/><br/>
+
+<!--网页获取到的音频播放器-->
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1403318151&auto=1&height=66">
+</iframe><br/>
+<!--自己的音频文件的音频播放器-->
+<audio src="音频地址" controls>
+    你的浏览器不支持audio标签
+</audio><br/>
+<!--视频播放器-->
+<video src="https://music.163.com/#/mv?id=10748021" controls="controls" width="400" height="400"></video>
+</body>
+</html>
